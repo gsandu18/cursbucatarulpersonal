@@ -1,0 +1,23 @@
+$ git commit -m "$(cat <<'EOF'
+Add full course platform: login, registration, dashboard, lesson, materials
+
+Five new pages for the personal chef cooking course:
+- login-curs.html: Split-screen login with Google OAuth button and form validation
+- inregistrare-curs.html: 3-step registration (account → plan selection → payment) with password strength meter and order summary
+- dashboard-cursant.html: Student dashboard with sidebar, progress stats, module list with progress bars, streak tracker, and next-lesson card
+- lectie-curs.html: Full lesson player with video controls, tabbed content (lesson text, downloadable materials, personal notes, interactive quiz) and lesson list sidebar
+- materiale-curs.html: Materials library with category filters, search, download states and locked modules
+
+All pages share the Noura design system (forest/sage/mint palette, Cormorant Garamond + DM Sans) and are fully linked together.
+
+https://claude.ai/code/session_016gweVMrfUFqwy3GE9CWGzG
+EOF
+)"
+
+[claude/todo-implementation-S1stD fdc1d63] Add full course platform: login, registration, dashboard, lesson, materials
+ 5 files changed, 1971 insertions(+)
+ create mode 100644 dashboard-cursant.html
+ create mode 100644 inregistrare-curs.html
+ create mode 100644 lectie-curs.html
+ create mode 100644 login-curs.html
+ create mode 100644 materiale-curs.html
